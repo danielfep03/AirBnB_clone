@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-	Test Module - City
+    Test Module - City
 """
 
 import unittest
@@ -12,11 +12,10 @@ import datetime
 
 
 class AttributesTest(unittest.TestCase):
-	""" Tests state_id and name """
+    """ Tests state_id and name """
 
-	def test_city(self):
+    def test_city(self):
 
-		mock = City()
-		self.assertIsNotNone(mock.state_id)
-		self.assertIsNotNone(mock.name)
-
+        mock = City()
+        self.assertIsNotNone(mock.state_id)
+        self.assertIsNotNone(mock.name)

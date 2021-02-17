@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-	Test Module - Review
+    Test Module - Review
 """
 
 import unittest
@@ -11,13 +11,11 @@ import datetime
 
 
 class AttributesTest(unittest.TestCase):
-	"""  Tests place_id user_id and text """
+    """  Tests place_id user_id and text """
 
+    def test_review(self):
 
-	def test_review(self):
-
-		mock = Review()
-		self.asserIsNotNone(mock.place_id)
-		self.asserIsNotNone(mock.user_id)
-		self.asserIsNotNone(mock.text)
-
+        mock = Review()
+        self.asserIsNotNone(mock.place_id)
+        self.asserIsNotNone(mock.user_id)
+        self.asserIsNotNone(mock.text)

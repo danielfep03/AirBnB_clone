@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-	Test Module - Amenity
+    Test Module - Amenity
 """
 
 import unittest
@@ -11,10 +11,9 @@ import datetime
 
 
 class AttributesTest(unittest.TestCase):
-	""" Tests name """
+    """ Tests name """
 
-	def test_amenity(self):
+    def test_amenity(self):
 
-		mock = Amenity()
-		self.assertIsNotNone(mock.name)
-
+        mock = Amenity()
+        self.assertIsNotNone(mock.name)
