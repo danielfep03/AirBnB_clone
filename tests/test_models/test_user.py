@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-	Test Module for User
+    Test Module for User
 """
 
 import unittest
@@ -11,14 +11,13 @@ import datetime
 
 
 class AttributesTest(unittest.TestCase):
-	""" Test assignation of user attributes """
+    """ Test assignation of user attributes """
 
-	def test_place(self):
-		""" test email password firs_name and last_name """
+    def test_place(self):
+        """ test email password firs_name and last_name """
 
-	mock = User()
-	self.assertIsNotNone(mock.email)
-	self.assertIsNotNone(mock.password)
-	self.assertIsNotNone(mock.first_name)
-	self.assertIsNotNone(mock.last_name)
-
+    mock = User()
+    self.assertIsNotNone(mock.email)
+    self.assertIsNotNone(mock.password)
+    self.assertIsNotNone(mock.first_name)
+    self.assertIsNotNone(mock.last_name)

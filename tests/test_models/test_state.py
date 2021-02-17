@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-	Module Test to ckeck state
+    Module Test to ckeck state
 """
 
 import unittest
@@ -11,12 +11,10 @@ import datetime
 
 
 class AttributesTest(unittest.TestCase):
-	""" Tests State's name """
+    """ Tests State's name """
 
+    def test_state(self):
+        """ tests name """
 
-	def test_state(self):
-		""" tests name """
-
-		mock = State()
-		self.assertIsNotNone(mock.name)
-
+        mock = State()
+        self.assertIsNotNone(mock.name)
