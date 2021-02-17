@@ -1,5 +1,5 @@
 <h1 align="center">AirBnB clone - The console</h1>
-<p align="center"><img src="https://www.holbertonschool.com/holberton-logo.png" alt="HBTN"></p>
+<p align="center"><img src="multimedia/hbnb.png" alt="HBTN"></p>
 <h2 align="center">SYNOPSIS</h2>
 
 ### What’s a command interpreter?
