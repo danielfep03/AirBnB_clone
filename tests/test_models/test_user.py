@@ -16,8 +16,8 @@ class AttributesTest(unittest.TestCase):
     def test_place(self):
         """ test email password firs_name and last_name """
 
-    mock = User()
-    self.assertIsNotNone(mock.email)
-    self.assertIsNotNone(mock.password)
-    self.assertIsNotNone(mock.first_name)
-    self.assertIsNotNone(mock.last_name)
+        mock = User()
+        self.assertIsNotNone(mock.email)
+        self.assertIsNotNone(mock.password)
+        self.assertIsNotNone(mock.first_name)
+        self.assertIsNotNone(mock.last_name)

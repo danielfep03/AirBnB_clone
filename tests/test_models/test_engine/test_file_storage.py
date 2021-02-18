@@ -6,11 +6,12 @@
 import unittest
 from models.base_model import BaseModel
 from models import storage
+import models
 import os
 import json
 
 
-class AttributesTEst(unittest.TestCase):
+class AttributesTest(unittest.TestCase):
     """ Tests __file_path and __objects """
 
     def test_file_storage(self):
@@ -51,7 +52,7 @@ class MethodsTest(unittest.TestCase):
         list_size = len(storage.all())
         if os.path.isfile('file.json'):
             with open('file.json', 'r') as json:
-                docu = json.read()
+                json.read()
                 storage.reload()
                 storage.reload()
                 self.assertGreater(list_size, 0)

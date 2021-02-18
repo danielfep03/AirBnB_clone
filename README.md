@@ -1,40 +1,70 @@
 <h1 align="center">AirBnB clone - The console</h1>
-<p align="center"><img src="https://www.holbertonschool.com/holberton-logo.png" alt="HBTN"></p>
-<h2 align="center">SYNOPSIS</h2>
+<p align="center"><img src="multimedia/hbnb.png"></p>
+<h2 align="center">Description</h2>
 
-### What’s a command interpreter?
-
-Do you remember the Shell? It’s exactly the same but limited to a specific use-case. In our case, we want to be able to manage the objects of our project:
+This is the initial stage to build a clone of the **AirBnB** website.
+This first step is very important because it will help us develop the next steps in which we will implement: HTML / CSS templates, database storage, API, front-end integration .
+We want to be able to manage the objects of our project:
 
 -   Create a new object (ex: a new User or a new Place)
 -   Retrieve an object from a file, a database etc…
 -   Do operations on objects (count, compute stats, etc…)
 -   Update attributes of an object
 -   Destroy an object
-#### First step: Write a command interpreter to manage your AirBnB objects.
 
-This is the first step towards building your first full web application: the  **AirBnB clone**. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
+src="multimedia/Template.png" alt="Template"></p>
 
-Each task is linked and will help you to:
+<h2 align="center">Command Interpreter</h2>
 
--   put in place a parent class (called  `BaseModel`) to take care of the initialization, serialization and deserialization of your future instances
--   create a simple flow of serialization/deserialization: Instance <-> Dictionary <-> JSON string <-> file
--   create all classes used for AirBnB (`User`,  `State`,  `City`,  `Place`…) that inherit from  `BaseModel`
--   create the first abstracted storage engine of the project: File storage.
--   create all unittests to validate all our classes and storage engine
-## Learning Objectives
+### How to Use
 
-At the end of this project, you are expected to be able to  [explain to anyone](https://intranet.hbtn.io/rltoken/MwKclAaCLNksSms8I-LuXw "explain to anyone"),  **without the help of Google**:
+##### Required environment  📌 
+	- Ubuntu 14.04LTS +
+	- python3 (version 3.4.3 +)
 
-### General
+* Clone the repository
+`git clone https://github.com/danielfep03/AirBnB_clone.git`
+* Interactive Mode
+```
+$ ./console.py
+(hbnb) create User
+e556c44d-eeb2-4c00-900b-f7d0144a2d15
+(hbnb) destroy User e556c44d-eeb2-4c00-900b-f7d0144a2d15
+(hbnb) show User e556c44d-eeb2-4c00-900b-f7d0144a2d15
+** no instance found **
+(hbnb) quit
+$
+```
+* Non-Interactive mode
+```
+$ echo "help" | ./console.py
+(hbnb)
+Documented commands (type help \<topic\>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
 
--   How to create a Python package
--   How to create a command interpreter in Python using the  `cmd`  module
--   What is Unit testing and how to implement it in a large project
--   How to serialize and deserialize a Class
--   How to write and read a JSON file
--   How to manage  `datetime`
--   What is an  `UUID`
--   What is  `*args`  and how to use it
--   What is  `**kwargs`  and how to use it
--   How to handle named arguments in a function
+
+|  COMMAND| DESCRIPTION |
+|--|--|
+| create | Creates a new instance, saves it (to the JSON file) and prints the `id`|
+|show| Prints the string representation of an instance based on the class name and `id`|
+destroy | Deletes an instance based on the class name and `id`|
+|all | Prints all string representation of all instances based or not on the class name|
+|update | Updates an instance based on the class name and `id` by adding or updating attribute|
+
+## Authors
+#### [Daniel Amado](https://github.com/danielfep03)
+#### [Camilo Garzón](https://github.com/Dc-cpu-arc)

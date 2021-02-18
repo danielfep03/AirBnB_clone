@@ -169,7 +169,7 @@ class HBNBCommand(cmd.Cmd):
         """ Retrieve all instances of a class """
         class_arg = line.split(".")
         if class_arg[0] not in self.classes:
-            print("No command")
+            print("** syntax error")
         elif class_arg[0] in self.classes:
             str_class = []
             for value in models.storage.all().values():
@@ -178,7 +178,6 @@ class HBNBCommand(cmd.Cmd):
             if not str_class:
                 return
             print(str_class)
-            return
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()

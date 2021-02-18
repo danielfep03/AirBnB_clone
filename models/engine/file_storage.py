@@ -52,7 +52,7 @@ class FileStorage():
             try:
                 with open(FileStorage.__file_path, "r") as json_file:
                     dict__objects = json.load(json_file)
-                    for classname, id in dict__objects.items():
-                        self.__objects[classname] = eval(id['__class__'])(**id)
+                    for classname, dic in dict__objects.items():
+                        self.__objects[classname] = eval(dic['__class__'])(**dic)
             except Exception:
                 pass

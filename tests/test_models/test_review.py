@@ -16,6 +16,6 @@ class AttributesTest(unittest.TestCase):
     def test_review(self):
 
         mock = Review()
-        self.asserIsNotNone(mock.place_id)
-        self.asserIsNotNone(mock.user_id)
-        self.asserIsNotNone(mock.text)
+        self.assertIsNotNone(mock.place_id)
+        self.assertIsNotNone(mock.user_id)
+        self.assertIsNotNone(mock.text)

@@ -18,7 +18,7 @@ class AttributesTest(unittest.TestCase):
 
     def test_place(self):
 
-        dummy = Place()
+        mock = Place()
         self.assertIsNotNone(mock.city_id)
         self.assertIsNotNone(mock.user_id)
         self.assertIsNotNone(mock.name)
