@@ -165,6 +165,20 @@ class HBNBCommand(cmd.Cmd):
                             value)
                     storage.save()
 
+    def default(self, line):
+        """ Retrieve all instances of a class """
+        class_arg = line.split(".")
+        if class_arg[0] not in self.classes:
+            print("No command")
+        elif class_arg[0] in self.classes:
+            str_class = []
+            for value in models.storage.all().values():
+                if class_arg[0] in value.__class__.__name__:
+                    str_class.append(str(value))
+            if not str_class:
+                return
+            print(str_class)
+            return
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
