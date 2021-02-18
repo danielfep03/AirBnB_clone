@@ -67,4 +67,4 @@ destroy | Deletes an instance based on the class name and `id`|
 
 ## Authors
 #### [Daniel Amado](https://github.com/danielfep03)
-#### [Camilo Garzón](https://github.com/Dc-cpu-arc)
+#### [Camilo Garzón](https://github.com/Dc-cpu-arch)
