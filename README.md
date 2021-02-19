@@ -12,7 +12,7 @@ We want to be able to manage the objects of our project:
 -   Update attributes of an object
 -   Destroy an object
 
-src="multimedia/Template.png" alt="Template"></p>
+<p align="center"><img src="multimedia/Template.png"></p>
 
 <h2 align="center">Command Interpreter</h2>
 
