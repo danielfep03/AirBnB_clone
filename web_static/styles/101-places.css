@@ -1,0 +1,160 @@
+.places > h1 {
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+.places {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+.places > article {
+	width: 390px;
+	padding: 20px;
+	margin: 20px;
+	border: #FF5A5F 1px solid;
+	border-radius: 4px;
+	margin: auto;
+	margin-top: 35px;
+	position: relative;
+}
+
+#place{
+	margin-bottom: 0;
+}
+
+.places > article > h2 {
+	text-align: center;
+	margin-top: 0;
+}
+
+.price_by_night {
+	border: #FF5A5F 4px solid;
+	border-radius: 50%;
+	min-width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.price_by_night > p {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 13px;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #FF5A5F;
+	overflow: hidden;
+}
+
+.information {
+	height: 80px;
+	border-top: #DDDDDD 1px solid;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+.user {
+	border-top: 1px solid #DDDDDD;
+}
+
+.user > p{
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.description > p {
+	margin-top: 4px;
+}
+
+.icon_guests{
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/icon_group.png);
+}
+
+.icon_bedroom{
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/icon_bed.png);
+	margin: auto;
+	margin-left: 15px;
+}
+
+.icon_bathroom{
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/icon_bath.png);
+	margin: auto;
+	margin-left: 15px;
+}
+
+.none-amenities > h2 {
+	border-bottom: 1px #DDDDDD solid;
+}
+
+.pet {
+	background: url("../images/icon_pets.png") no-repeat;
+	background-size: 75%;
+	background-position-y: 9px;
+	background-position-x: 3px;
+	height: 30px;
+	width: 30px;
+	display: inline-grid;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: -5px;
+}
+
+.tv {
+	background: url("../images/icon_tv.png") no-repeat;
+	background-size: 85%;
+	background-position-y: 9px;
+	height: 30px;
+	width: 30px;
+	display: inline-grid;
+	margin: 0;
+	margin-bottom: -3px;
+}
+
+.wifi {
+	background: url("../images/icon_wifi.png") no-repeat;
+	background-size: 85%;
+	background-position-y: 9px;
+	height: 30px;
+	width: 30px;
+	display: inline-grid;
+	margin: 0;
+	margin-bottom: -3px;
+}
+
+.none-amenities > * > * > p {
+	margin: 0;
+	margin-bottom: 80px;
+	display: inline;
+}
+
+.reviews {
+	margin-top: 40px;
+}
+
+.reviews > h2 {
+	font-size: 16px;
+	border-bottom: #DDDDDD 1px solid;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+@media (max-width: 928px) {
+	.places > article {
+		width: 310px;
+	}
+}
